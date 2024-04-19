@@ -615,7 +615,7 @@ footer .down {
 
 #form {
     padding: 3rem;
-    background: url('/assets/background-images/bg-form.png') center/cover;
+    background: url('../assets/background-images/bg-form.png') center/cover;
 }
 
 .formulario {

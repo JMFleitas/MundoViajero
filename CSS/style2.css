@@ -6,7 +6,7 @@
     --titular-font: "Englebert", sans-serif;
     --main-font: "Andika", sans-serif;
     /*Colors*/
-    --first-color: rgb(168, 104, 232);
+    --btn-wsp: rgb(19, 188, 19);
     --second-color: rgb(54, 86, 243);
     --second-color-alpha: rgba(54, 85, 243, 0.769);
     --third-color: rgb(255, 126, 212);
@@ -18,7 +18,8 @@
     --white-color: rgb(255, 255, 255);
     --color-links: #d8d8d8;
     /*Gradients*/
-    --gradient-header: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    --gradient-contact: linear-gradient(to top, #c3dff4 40%, #51a7df 100%);
+    ;
     /* text-shadow */
     --text-shadow-header: 1px 1px 2px #080808;
     /*Animations*/
@@ -46,7 +47,7 @@ body {
     min-height: 100vh;
     font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1400 - 300)));
     font-family: var(--main-font);
-    background: url('../assets/bg-2.jpg') center/cover no-repeat fixed;
+    background: url('../assets/background-images/bg-2.jpg') center/cover no-repeat fixed;
 }
 
 
@@ -125,7 +126,7 @@ body {
 }
 
 .btn-wsp:hover {
-    background-color: rgb(19, 188, 19);
+    background-color: var(--btn-wsp);
     opacity: 1;
 }
 
@@ -135,7 +136,7 @@ body {
 
 .btn-wsp i {
     font-size: 3rem;
-    color: rgb(19, 188, 19);
+    color: var(--btn-wsp);
 }
 
 /**Header*/
@@ -291,8 +292,8 @@ header .navbar-desktop * {
     border-radius: 30px;
     height: 3.5rem;
     width: 70%;
-    border: thin solid var(--second-color);
-    outline-color: var(--second-color);
+    border: thin solid var(--forth-color);
+    outline-color: var(--forth-color);
     padding: 0 2rem;
     font-size: 1.5rem;
     font-weight: bold;
@@ -309,7 +310,7 @@ header .navbar-desktop * {
 
 
 .container-search .btn-search {
-    background: var(--second-color);
+    background: var(--forth-color);
     height: 3.5rem;
     width: 8rem;
     border-radius: 30px;
@@ -328,7 +329,7 @@ header .navbar-desktop * {
 }
 
 .container-search .btn-search:hover i {
-    color: var(--second-color);
+    color: var(--forth-color);
 }
 
 
@@ -592,12 +593,11 @@ footer .down {
 
 /**Contacto*/
 .contacto-main {
-    margin-top: 8rem;
+    margin-top: 7.5rem;
 }
 
-#contacto .contacto-item:nth-child(1) {
-    background-color: #ffffffa7;
-    padding: 2rem;
+#contacto {
+    background: #e9e8e8f7;
 }
 
 
@@ -606,26 +606,86 @@ footer .down {
     margin: 0 auto;
 }
 
+
+#contacto:nth-child(2) {
+    flex-grow: 1;
+}
+
 /**Formulario**/
 
-#contacto .formulario {
+#form {
+    padding: 3rem;
+    background: url('/assets/background-images/bg-form.png') center/cover;
+}
+
+.formulario {
     flex-direction: column;
 }
 
-.formulario .form-item {
-    flex-direction: column;
-}
-
-.form-item .ipt-1 {
+.ipt {
     height: 3rem;
     border-radius: 10px;
-    padding-left: 1rem;
+    padding: 1rem;
+    border: thin solid var(--second-color);
+    outline-color: var(--second-color-alpha);
 }
 
 
+textarea {
+    margin-top: 3rem;
+    outline-color: var(--second-color);
+    padding: 1rem;
+
+}
 
 .formulario .info-email {
     flex-direction: inherit;
+}
+
+.info-email small {
+    text-shadow: 1px 1px 3px #fff;
+}
+
+
+input[type="submit"] {
+    background-color: #386ee3;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: var(--white-color);
+    border-radius: 15px;
+    border: none;
+    transition: all .5s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #1199f4;
+}
+
+/**Sucursales**/
+
+#sucursales {
+    padding: 3rem 2rem;
+}
+
+.links-container {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.links-sucursales {
+    display: block;
+    font-size: 2rem;
+    color: var(--black-color);
+    margin-right: 3rem;
+}
+
+.links-sucursales:hover {
+    color: var(--second-color-alpha);
+}
+
+.mapa {
+    margin: 3rem auto;
 }
 
 @media (min-width: 800px) {
@@ -783,8 +843,8 @@ footer .down {
         border-radius: 30px;
         height: 3.5rem;
         width: 40rem;
-        border: thin solid var(--second-color);
-        outline-color: var(--second-color-alpha);
+        border: thin solid var(--forth-color);
+        outline-color: var(--forth-color);
         padding: 0 2rem;
         font-size: 1.5rem;
         font-weight: bold;
@@ -796,6 +856,8 @@ footer .down {
     footer .up {
         flex-flow: row-reverse wrap;
     }
+
+    /**Contacto*/
 
 }
 

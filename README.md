@@ -17,3 +17,5 @@ Este proyecto es sobre una página de turismo donde incorporo Bootstrap.
 * Preguntas Frecuentes
 * Formulario de Contacto
 
+### Se agregó animación a las promos con un Intersection Observer
+

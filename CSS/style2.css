@@ -73,6 +73,23 @@ body {
     animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
+/*Animations*/
+.swing-in-top-fwd {
+    -webkit-animation: swing-in-top-fwd 3s cubic-bezier(0.25, 0.1, 0.25, 1) both;
+    animation: swing-in-top-fwd 3s cubic-bezier(0.25, 0.1, 0.25, 1) both;
+}
+
+.fade-out {
+    -webkit-animation: fade-out 1.7s ease-out both;
+    animation: fade-out 1.7s ease-out both;
+
+}
+
+.fade-in {
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
 
 
 /**Container botones*/
@@ -716,22 +733,6 @@ input[type="submit"]:hover {
 
 @media (min-width: 800px) {
 
-    /*Animations*/
-    .swing-in-top-fwd {
-        -webkit-animation: swing-in-top-fwd 3s cubic-bezier(0.25, 0.1, 0.25, 1) both;
-        animation: swing-in-top-fwd 3s cubic-bezier(0.25, 0.1, 0.25, 1) both;
-    }
-
-    .fade-out {
-        -webkit-animation: fade-out 1.7s ease-out both;
-        animation: fade-out 1.7s ease-out both;
-
-    }
-
-    .fade-in {
-        -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    }
 
     /*!Disable*/
     .cta-menu-mobile {

@@ -88,6 +88,8 @@
                         <label for=" email">Email</label><br>
                         <input class="ipt" type="text" placeholder="Ej Carlos" id="email" name="email"
                             pattern="^.[a-z0-9]+(\.[_a-z0-100]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                        <input class="ipt" type="email" placeholder="dominio@mail.com" id="email" name="email"
+                            pattern="" required>
                     </div>
 
                     <div>
@@ -118,7 +120,14 @@
             <div class=" col-sm-12 col-md-6" id="sucursales">
 
                 <h2 class="title-section">Sucursales</h2>
-                <section class="links-container">
+
+                <iframe class="mapa ratio ratio-1x1"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13136.716086383629!2d-58.379871441587845!3d-34.59963435537007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1713330518955!5m2!1ses-419!2sar"
+                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+                <div class="links-container">
                     <div>
                         <a class="bi bi-geo-alt links-sucursales" href="">Suipacha 1234</a>
                         <a class="bi bi-geo-alt links-sucursales" href="">Av Corrientes 126</a>
@@ -129,14 +138,8 @@
                         <a class="bi bi-geo-alt links-sucursales" href="">Uruguay 356</a>
                         <a class="bi bi-geo-alt links-sucursales" href="">Fitz Roy 785</a>
                     </div>
-                </section>
+                </div>
 
-
-                <iframe class="mapa ratio ratio-1x1"
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13136.716086383629!2d-58.379871441587845!3d-34.59963435537007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1713330518955!5m2!1ses-419!2sar"
-                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
             </div>
 
         </section>

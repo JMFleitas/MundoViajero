@@ -759,7 +759,7 @@ input[type="submit"]:hover {
     }
 
     header {
-        justify-content: flex-start;
+        justify-content: space-between;
         transition: all .5s ease;
 
     }
@@ -772,7 +772,7 @@ input[type="submit"]:hover {
     /**Navbar desktop**/
 
     .navbar-desktop {
-        margin-left: 1rem;
+        margin-right: 10rem;
         margin-top: .7rem;
         /* flex-shrink: 1; */
     }

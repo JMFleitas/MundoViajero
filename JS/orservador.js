@@ -1,5 +1,7 @@
 const d = document;
 
+//todo -- Esta Función sirve para observar cuando entra en foco las publicidades y hacer una animación para aparecer
+
 export default function observeImages() {
     const $img = d.querySelectorAll("img[data-img-observer]");
 
@@ -7,9 +9,9 @@ export default function observeImages() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("visible-promo", "swing-in-top-fwd");
-                setTimeout(() => {
-                    entry.target.classList.add("fade-out");
-                }, 10000);
+                // setTimeout(() => {
+                //     entry.target.classList.add("fade-out");
+                // }, 10000);
             }
         });
     };

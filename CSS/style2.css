@@ -498,15 +498,21 @@ section {
     filter: drop-shadow(2px 2px 1px #c5c5c5a4);
 }
 
-/***60-off**/
+/***Promo footer**/
 
-.promo-60-off {
+.promo-footer {
     width: 100%;
 }
 
-.promo-60-off img {
+.promo-footer img {
     width: 100%;
 
+}
+
+/**black*/
+.black {
+    width: 100%;
+    margin: auto;
 }
 
 /**Footer*/
@@ -918,8 +924,12 @@ input[type="submit"]:hover {
         flex-flow: row-reverse wrap;
     }
 
+    /**Black**/
 
-    /**Contacto*/
+    .black {
+        width: 60%;
+        margin: auto;
+    }
 
 }
 
